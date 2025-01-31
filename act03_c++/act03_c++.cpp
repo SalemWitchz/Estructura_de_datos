@@ -2,10 +2,21 @@
 //
 
 #include <iostream>
+using namespace std;
+const int NUM = 8;
 
-int main()
-{
-    std::cout << "Hello World!\n";
+int main(){
+    int nums[NUM];
+    int total = 0;
+    for (int i = 0;i < NUM;i++) {
+        cout << "Porfavor, introduzca el numero: ";
+        cin >> nums[i];
+        total += nums[i];
+    }
+    cout << "el total de numero es " << total << endl;
+    system("pause");
+    return 0;
+
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
